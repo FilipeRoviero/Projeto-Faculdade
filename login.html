@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="styles/style_login.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/ResidualProcessingLogo.png" alt="Residual Processing"></a>
+            </div>
+            <nav class="main-nav">
+                <a href="onde_descartar.html"><button class="descartar">ONDE DESCARTAR?</button></a>
+                <a href="index.html"><button class="menu">MENU</button></a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Descarte seus resíduos sem sair de casa</h1>
+            <p>Preencha o formulário e enviaremos as informações sobre preços e formas de pagamento para coleta, descaracterização e destinação ecológica</p>
+        </div>
+    </section>
+    <section class="form-section">
+        <form action="cadastrado.html">
+            
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="_____-___">
+            
+            <label for="estado">ESTADO</label>
+            <select id="estado" name="estado">
+                <option>— Selecione o estado —</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+            </select>
+            
+            <label for="cidade">CIDADE</label>
+                <input type="text" placeholder="Digite o nome da sua cidade">
+            </select>
+            
+            <label for="firstname">PRIMEIRO NOME</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome">
+            
+            <label for="lastname">SOBRENOME</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome">
+            
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+            <label for="senha">SENHA</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha">
+            
+            <label for="phone">TELEFONE</label>
+            <input type="tel" id="phone" name="phone" placeholder="(__) _____-____">
+            
+            <label for="captcha">RESPONDA: 3 + 3 = ?</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Sua resposta">
+            
+            <div class="checkbox">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Concordo em receber comunicações e ofertas</label>
+            </div>
+            
+            
+            <button type="submit"><a href="cadastrado.html" style="text-decoration: none; color: white;">Enviar</a></button>
+            
+        </form>
+    </section>
+
+    <footer style="background-color: #333; text-align: center;">
+      <h2>Fale conosco</h2>
+      <div class="contato" style="display: flex; align-items: center; justify-content: center; gap: 3rem;">
+        <p><img src="images/telefone.png" alt="" style="max-width: 20px;">Número: (41)99999-9999</p>
+        <p><img src="images/email.png" alt="" style="max-width: 20px;">Email: residual.processing@hotmail</p>
+        <p><img src="images/endereco.png" alt="" style="max-width: 20px;">Endereço: Av. Presidente Getúlio Vargas, 892</p>
+      </div>
+      <p>&copy 2024 Residual Processing</p>
+    </footer>
+</body>
+</html>

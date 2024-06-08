@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav button {
+  background-color: #04aa6d;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-nav button.menu {
+  background-color: #555;
+}
+
+.banner {
+  background-image: url('banner-image.jpg'); /* Substitua com a imagem do banner */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  color: white;
+}
+
+.banner-text p {
+  font-size: 18px;
+  color: white;
+}
+
+.form-section {
+  padding: 20px;
+  background-color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-top: 10px;
+  color: #ddd;
+}
+
+form input, form textarea, form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form .checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+form .checkbox input {
+  margin-right: 10px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #038e58;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0; /* Ajuste do padding para diminuir a altura */
+}
+
+footer h2 {
+  margin: 5px 0;
+  font-size: 16px; /* Ajuste do tamanho da fonte */
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contato p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0; /* Ajuste da margem */
+  font-size: 14px; /* Ajuste do tamanho da fonte */
+}
+
+.icon {
+  max-width: 20px;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-text h1 {
+    font-size: 24px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  footer h2 {
+    font-size: 14px;
+  }
+
+  .contato p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+  }
+
+  .contato p {
+    font-size: 12px;
+  }
+
+  footer h2 {
+    font-size: 14px;
+  }
+}
